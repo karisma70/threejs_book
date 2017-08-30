@@ -35,7 +35,7 @@
         // create a scene, that will hold all our elements such as objects, cameras and lights.
         var scene = new THREE.Scene();
         //scene.fog=new THREE.FogExp2( 0xffffff, 0.015 );
-        // scene.fog = new THREE.Fog(0xffffff, 0.015, 100);  // 원래 코드임  주석 제거할 것
+        scene.fog = new THREE.Fog(0xffffff, 0.015, 100);  // 원래 코드임  주석 제거할 것
 
         // create a camera, which defines where we're looking at.
         var camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);

@@ -218,7 +218,7 @@ var FuncTest = function()
 			{
                 if (e instanceof THREE.Mesh && e != plane) 
 				{
-
+                    console.log( "Element Type : " + e.type + "e.id " + e.id );
                     e.rotation.x += controls.rotationSpeed;
                     e.rotation.y += controls.rotationSpeed;
                     e.rotation.z += controls.rotationSpeed;
